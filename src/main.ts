@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { loadManifest } from './assets/manifest';
 import { buildTerrariumView, GRID_H, GRID_W } from './rendering/terrariumView';
 import type { Direction } from './shared/types/manifest';
@@ -12,7 +13,7 @@ const DIRECTION_KEYS: Record<string, Direction> = {
 
 async function start(): Promise<void> {
   const hud = document.getElementById('hud') as HTMLElement;
-  const canvasHost = document.getElementById('app') as HTMLElement;
+  const host = document.getElementById('app') as HTMLElement;
 
   const manifest = await loadManifest();
   const biome = manifest.biomes[0];
@@ -21,39 +22,44 @@ async function start(): Promise<void> {
 
   const renderer = new THREE.WebGLRenderer({ antialias: false });
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-  canvasHost.appendChild(renderer.domElement);
+  host.appendChild(renderer.domElement);
 
   const scene = new THREE.Scene();
   scene.background = new THREE.Color(biome.palette.ground ?? '#1d2b24');
+  scene.add(new THREE.AmbientLight(0xffffff, 0.75));
+  const sun = new THREE.DirectionalLight(0xffffff, 1.1);
+  sun.position.set(-6, 14, 8);
+  scene.add(sun);
 
-  // Câmera ortográfica top-down: 1 unidade = 1 tile (32 px).
-  const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.1, 100);
-  camera.position.set(GRID_W / 2, GRID_H / 2, 10);
-  camera.lookAt(GRID_W / 2, GRID_H / 2, 0);
+  // Câmera 2.5D: perspectiva inclinada, olhando para o centro do terreno.
+  const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 200);
+  const target = new THREE.Vector3(GRID_W / 2, 0, GRID_H / 2);
+  camera.position.set(GRID_W / 2, 10.5, GRID_H / 2 + 10);
+
+  const controls = new OrbitControls(camera, renderer.domElement);
+  controls.target.copy(target);
+  controls.enableDamping = true;
+  controls.enablePan = false;
+  controls.minDistance = 8;
+  controls.maxDistance = 36;
+  controls.minPolarAngle = Math.PI / 6;
+  controls.maxPolarAngle = Math.PI / 2.2;
+  controls.update();
 
   const view = await buildTerrariumView(scene, manifest, biome, creature, 'down');
 
   const resize = () => {
-    const w = canvasHost.clientWidth;
-    const h = canvasHost.clientHeight;
+    const w = host.clientWidth;
+    const h = host.clientHeight;
     renderer.setSize(w, h, false);
-    // Enquadra o mundo inteiro com uma pequena margem, sem distorcer.
-    const worldW = GRID_W + 1;
-    const worldH = GRID_H + 1;
-    const aspect = w / h;
-    const viewW = aspect >= worldW / worldH ? worldH * aspect : worldW;
-    const viewH = aspect >= worldW / worldH ? worldH : worldW / aspect;
-    camera.left = -viewW / 2;
-    camera.right = viewW / 2;
-    camera.top = viewH / 2;
-    camera.bottom = -viewH / 2;
+    camera.aspect = w / h;
     camera.updateProjectionMatrix();
   };
   window.addEventListener('resize', resize);
   resize();
 
   const updateHud = () => {
-    hud.textContent = `${biome.name} · ${creature.name} (${creature.slug}) · voltado para: ${view.facing}  —  setas: mudar direção`;
+    hud.textContent = `${biome.name} · ${creature.name} (${creature.slug}) · voltado para: ${view.facing}  —  setas: mudar direção · arrastar: girar câmera`;
   };
   updateHud();
 
@@ -66,6 +72,8 @@ async function start(): Promise<void> {
   });
 
   renderer.setAnimationLoop(() => {
+    controls.update();
+    view.update(camera);
     renderer.render(scene, camera);
   });
 }

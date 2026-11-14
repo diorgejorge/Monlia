@@ -35,7 +35,7 @@ Inventário completo: `docs/ASSET_INVENTORY.md` (gerado pelo `npm run assets:ins
 
 ## Decisões tomadas nesta sprint
 
-1. **Sprites 2D sobre Three.js.** Os assets são 2D, então a cena usa câmera ortográfica top-down e quads texturizados. Não criamos modelos 3D substitutos (princípio 7). Registrado em `docs/adr/0001-sprites-2d-on-threejs.md`.
+1. **Mundo 3D com texturas pixel art e monstros em sprites 2.5D.** O solo e os paredões são 3D, com texturas pixel. Monstros e props são billboards que olham para a câmera. Não criamos modelos 3D substitutos (princípio 7). Registrado em `docs/adr/0001-mundo-3d-com-sprites-2-5d.md`.
 2. **Filtro Nearest, sem mipmaps, espaço sRGB** para manter a pixel art nítida.
 3. **Um clone de textura por criatura**, porque o offset do quadro fica na textura e um compartilhado mostraria a mesma direção em todas.
 4. **`locomotion: "unverified"`** em todos os monstros. O pacote não informa quais podem voar ou nadar, então nenhuma capacidade é inventada.
@@ -46,7 +46,7 @@ Inventário completo: `docs/ASSET_INVENTORY.md` (gerado pelo `npm run assets:ins
 
 - `npm run assets:inspect`: 0 erros, 0 avisos. Todos os caminhos existem, folhas 128x32, tiles 32x32, marcos 64x64, sheets animados 96x32, 60 monstros cobertos.
 - `npm test`: testes de manifesto (existência e dimensões) passam.
-- Render no Chromium headless com `npm run dev`: solo, caminho, paredão, marco, relíquia e o sátiro aparecem com pixels nítidos. As setas trocam a direção. Ver `docs/screenshots/`.
+- Render no Chromium headless com `npm run dev`: solo 3D com paredão, caminho, marco, relíquia e o sátiro como billboard. As setas trocam o quadro de direção. Ver `docs/screenshots/`.
 - Comparação com a prévia oficial do bioma 1 (`diorama_previews_3x`): a paleta e o estilo batem.
 
 ## Lacunas e pendências
@@ -54,7 +54,7 @@ Inventário completo: `docs/ASSET_INVENTORY.md` (gerado pelo `npm run assets:ins
 - **Transições de borda** (8 por bioma) estão no manifesto mas não são renderizadas na sprint 1. Precisam de regra de auto-tiling.
 - **Sheets animados** (água, braseiro) também não entram na cena. Falta um animador por quadros.
 - **Licença do pacote** não está declarada. Confirmar antes de publicar o projeto.
-- **Direção "up" fraca** nos monstros (ver acima). Decidir se a IA usa só três direções visuais, ou se precisamos de arte nova para costas.
+- **Direção "up" fraca** nos monstros (ver acima). Na tela, o sátiro de costas quase não se distingue da frente. Decidir se a IA usa só três direções visuais, ou se precisamos de arte nova para costas.
 - **Altura relativa entre espécies** não verificada. Um Kraken e um Sátiro podem precisar de escala diferente.
 - **Locomoção por tipo** (voo, natação, escalada): sem informação no pacote. Decidir se usamos o `archetype` como dica ou se marcamos manualmente.
 - **Bioma 1 apenas** é usado pela demo. Os outros 9 estão no manifesto para as próximas sprints.
