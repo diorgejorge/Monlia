@@ -1,31 +1,52 @@
-# Monlia · globo voxel
+# Mythos Terrarium
 
-Protótipo de um globo feito de voxels, com um personagem andando pela superfície.
-Sem build: three.js 0.160.0 carregado via jsDelivr e módulos ES nativos.
+Simulador de ecossistema mitológico em 3D (com sprites 2D). Criaturas vivem de forma autônoma em habitats conectados.
+Especificação: `docs/reference/Mythos_Terrarium_Arquitetura_Tecnica_1.0.md`.
+
+## Status
+
+Sprint 1 (MT-001 a MT-006), em andamento:
+
+- [x] Projeto Vite + TypeScript + Three.js
+- [x] Asset Inspector e manifesto (60 monstros, 10 biomas)
+- [x] Relatório de compatibilidade (`docs/ASSET_PIPELINE.md`)
+- [x] Cena com um bioma real e um monstro real, direções pelas setas
+- [ ] Simulação lógica (ainda não existe)
 
 ## Como rodar
 
-Módulos ES não funcionam abrindo o arquivo direto (`file://`). Sirva a pasta:
-
 ```bash
-python3 -m http.server 8000
-# abra http://localhost:8000
+npm install
+npm run assets:inspect -- <pasta_monstros> <pasta_biomas>   # só se os assets mudarem
+npm run dev                                                 # http://127.0.0.1:5173
 ```
 
-## Controles
+Os zips originais não ficam no repositório. `assets:inspect` recebe as pastas já extraídas
+e copia para `public/assets/` só os arquivos de runtime.
 
-- Arraste para girar, roda do mouse para aproximar.
-- **Novo mundo**: gera outro terreno (seed diferente).
-- **Seguir personagem**: a câmera acompanha o personagem por cima.
+## Scripts
+
+| Comando | O que faz |
+|---|---|
+| `npm run dev` | Servidor de desenvolvimento |
+| `npm run build` | Typecheck e build de produção |
+| `npm run typecheck` | Só o TypeScript |
+| `npm test` | Testes unitários (manifesto de assets) |
+| `npm run assets:inspect` | Audita os pacotes e gera manifesto e inventário |
 
 ## Estrutura
 
-- `index.html`: página, estilos e importmap do three.js.
-- `main.js`: terreno (ruído determinístico), globo como `InstancedMesh`, personagem e loop.
+```
+scripts/asset-inspector/   auditoria dos pacotes, leitura de PNG sem dependências
+public/assets/             arquivos de runtime e manifest.json (gerado)
+src/assets/                carregamento e validação do manifesto
+src/rendering/             Three.js: texturas e cena do terrário
+src/shared/types/          contratos (manifesto)
+tests/unit/                testes de manifesto
+docs/                      relatórios, ADRs, inventário e referência
+```
 
-## Estado atual (ponto de partida)
+## Decisões
 
-Conceito e identidade visual ainda em definição. Valores provisórios:
-
-- Paleta: água `#2f6f9f`, areia `#e3cb86`, grama `#6aa84f`, rocha `#8a7f72`, neve `#f2f5f8`.
-- Personagem: blocos simples (camisa laranja, calça azul-marinho), anda pela superfície e evita água e paredões.
+- [ADR 0001: sprites 2D sobre Three.js](docs/adr/0001-sprites-2d-on-threejs.md)
+- Assets são 2D pixel art: ver [relatório de compatibilidade](docs/ASSET_PIPELINE.md) para o que o pacote tem e o que falta.

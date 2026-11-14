@@ -1,0 +1,1490 @@
+{
+  "schemaVersion": 1,
+  "frameDirections": [
+    "down",
+    "up",
+    "left",
+    "right"
+  ],
+  "creatures": [
+    {
+      "id": 1,
+      "slug": "minotauro",
+      "name": "Minotauro",
+      "mythology": "Grega",
+      "archetype": "humanoid",
+      "sheet": "creatures/sheets/01_minotauro_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 2,
+      "slug": "medusa",
+      "name": "Medusa",
+      "mythology": "Grega",
+      "archetype": "naga",
+      "sheet": "creatures/sheets/02_medusa_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 3,
+      "slug": "hidra_lerna",
+      "name": "Hidra de Lerna",
+      "mythology": "Grega",
+      "archetype": "hydra",
+      "sheet": "creatures/sheets/03_hidra_lerna_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 4,
+      "slug": "cerbero",
+      "name": "Cérbero",
+      "mythology": "Grega",
+      "archetype": "quadruped",
+      "sheet": "creatures/sheets/04_cerbero_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 5,
+      "slug": "quimera",
+      "name": "Quimera",
+      "mythology": "Grega",
+      "archetype": "quadruped",
+      "sheet": "creatures/sheets/05_quimera_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 6,
+      "slug": "ciclope",
+      "name": "Ciclope",
+      "mythology": "Grega",
+      "archetype": "brute",
+      "sheet": "creatures/sheets/06_ciclope_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 7,
+      "slug": "centauro",
+      "name": "Centauro",
+      "mythology": "Grega",
+      "archetype": "centaur",
+      "sheet": "creatures/sheets/07_centauro_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 8,
+      "slug": "harpia",
+      "name": "Harpia",
+      "mythology": "Grega",
+      "archetype": "avian",
+      "sheet": "creatures/sheets/08_harpia_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 9,
+      "slug": "grifo",
+      "name": "Grifo",
+      "mythology": "Grega",
+      "archetype": "griffin",
+      "sheet": "creatures/sheets/09_grifo_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 10,
+      "slug": "fenix",
+      "name": "Fênix",
+      "mythology": "Grega",
+      "archetype": "avian",
+      "sheet": "creatures/sheets/10_fenix_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 11,
+      "slug": "sereia",
+      "name": "Sereia",
+      "mythology": "Grega",
+      "archetype": "naga",
+      "sheet": "creatures/sheets/11_sereia_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 12,
+      "slug": "esfinge",
+      "name": "Esfinge",
+      "mythology": "Egípcia",
+      "archetype": "griffin",
+      "sheet": "creatures/sheets/12_esfinge_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 13,
+      "slug": "manticora",
+      "name": "Mantícora",
+      "mythology": "Persa",
+      "archetype": "griffin",
+      "sheet": "creatures/sheets/13_manticora_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 14,
+      "slug": "basilisco",
+      "name": "Basilisco",
+      "mythology": "Europeia",
+      "archetype": "serpent",
+      "sheet": "creatures/sheets/14_basilisco_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 15,
+      "slug": "pegaso",
+      "name": "Pégaso",
+      "mythology": "Grega",
+      "archetype": "griffin",
+      "sheet": "creatures/sheets/15_pegaso_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 16,
+      "slug": "satiro",
+      "name": "Sátiro",
+      "mythology": "Grega",
+      "archetype": "humanoid",
+      "sheet": "creatures/sheets/16_satiro_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 17,
+      "slug": "dragao_vermelho",
+      "name": "Dragão Europeu",
+      "mythology": "Europeia",
+      "archetype": "dragon",
+      "sheet": "creatures/sheets/17_dragao_vermelho_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 18,
+      "slug": "kraken",
+      "name": "Kraken",
+      "mythology": "Nórdica",
+      "archetype": "cephalopod",
+      "sheet": "creatures/sheets/18_kraken_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 19,
+      "slug": "fenrir",
+      "name": "Fenrir",
+      "mythology": "Nórdica",
+      "archetype": "quadruped",
+      "sheet": "creatures/sheets/19_fenrir_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 20,
+      "slug": "jormungandr",
+      "name": "Jörmungandr",
+      "mythology": "Nórdica",
+      "archetype": "serpent",
+      "sheet": "creatures/sheets/20_jormungandr_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 21,
+      "slug": "draugr",
+      "name": "Draugr",
+      "mythology": "Nórdica",
+      "archetype": "humanoid",
+      "sheet": "creatures/sheets/21_draugr_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 22,
+      "slug": "valquiria",
+      "name": "Valquíria",
+      "mythology": "Nórdica",
+      "archetype": "avian",
+      "sheet": "creatures/sheets/22_valquiria_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 23,
+      "slug": "troll_montanha",
+      "name": "Troll da Montanha",
+      "mythology": "Nórdica",
+      "archetype": "brute",
+      "sheet": "creatures/sheets/23_troll_montanha_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 24,
+      "slug": "gigante_gelo",
+      "name": "Gigante de Gelo",
+      "mythology": "Nórdica",
+      "archetype": "brute",
+      "sheet": "creatures/sheets/24_gigante_gelo_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 25,
+      "slug": "guardiao_anubis",
+      "name": "Guardião de Anúbis",
+      "mythology": "Egípcia",
+      "archetype": "humanoid",
+      "sheet": "creatures/sheets/25_guardiao_anubis_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 26,
+      "slug": "ammit",
+      "name": "Ammit",
+      "mythology": "Egípcia",
+      "archetype": "quadruped",
+      "sheet": "creatures/sheets/26_ammit_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 27,
+      "slug": "mumia",
+      "name": "Múmia Real",
+      "mythology": "Egípcia",
+      "archetype": "humanoid",
+      "sheet": "creatures/sheets/27_mumia_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 28,
+      "slug": "escaravelho",
+      "name": "Escaravelho Gigante",
+      "mythology": "Egípcia",
+      "archetype": "beetle",
+      "sheet": "creatures/sheets/28_escaravelho_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 29,
+      "slug": "apophis",
+      "name": "Apófis",
+      "mythology": "Egípcia",
+      "archetype": "serpent",
+      "sheet": "creatures/sheets/29_apophis_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 30,
+      "slug": "kitsune",
+      "name": "Kitsune",
+      "mythology": "Japonesa",
+      "archetype": "quadruped",
+      "sheet": "creatures/sheets/30_kitsune_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 31,
+      "slug": "oni",
+      "name": "Oni",
+      "mythology": "Japonesa",
+      "archetype": "brute",
+      "sheet": "creatures/sheets/31_oni_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 32,
+      "slug": "tengu",
+      "name": "Tengu",
+      "mythology": "Japonesa",
+      "archetype": "avian",
+      "sheet": "creatures/sheets/32_tengu_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 33,
+      "slug": "kappa",
+      "name": "Kappa",
+      "mythology": "Japonesa",
+      "archetype": "humanoid",
+      "sheet": "creatures/sheets/33_kappa_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 34,
+      "slug": "jorogumo",
+      "name": "Jorōgumo",
+      "mythology": "Japonesa",
+      "archetype": "arachnid",
+      "sheet": "creatures/sheets/34_jorogumo_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 35,
+      "slug": "ryu_oriental",
+      "name": "Dragão Ryū",
+      "mythology": "Japonesa",
+      "archetype": "serpent",
+      "sheet": "creatures/sheets/35_ryu_oriental_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 36,
+      "slug": "curupira",
+      "name": "Curupira",
+      "mythology": "Brasileira",
+      "archetype": "humanoid",
+      "sheet": "creatures/sheets/36_curupira_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 37,
+      "slug": "boitata",
+      "name": "Boitatá",
+      "mythology": "Brasileira",
+      "archetype": "serpent",
+      "sheet": "creatures/sheets/37_boitata_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 38,
+      "slug": "iara",
+      "name": "Iara",
+      "mythology": "Brasileira",
+      "archetype": "naga",
+      "sheet": "creatures/sheets/38_iara_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 39,
+      "slug": "saci",
+      "name": "Saci-Pererê",
+      "mythology": "Brasileira",
+      "archetype": "humanoid",
+      "sheet": "creatures/sheets/39_saci_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 40,
+      "slug": "mapinguari",
+      "name": "Mapinguari",
+      "mythology": "Brasileira",
+      "archetype": "brute",
+      "sheet": "creatures/sheets/40_mapinguari_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 41,
+      "slug": "cuca",
+      "name": "Cuca",
+      "mythology": "Brasileira",
+      "archetype": "humanoid",
+      "sheet": "creatures/sheets/41_cuca_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 42,
+      "slug": "corpo_seco",
+      "name": "Corpo-Seco",
+      "mythology": "Brasileira",
+      "archetype": "humanoid",
+      "sheet": "creatures/sheets/42_corpo_seco_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 43,
+      "slug": "mula_sem_cabeca",
+      "name": "Mula-sem-Cabeça",
+      "mythology": "Brasileira",
+      "archetype": "quadruped",
+      "sheet": "creatures/sheets/43_mula_sem_cabeca_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 44,
+      "slug": "lobisomem",
+      "name": "Lobisomem",
+      "mythology": "Folclore",
+      "archetype": "humanoid",
+      "sheet": "creatures/sheets/44_lobisomem_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 45,
+      "slug": "banshee",
+      "name": "Banshee",
+      "mythology": "Celta",
+      "archetype": "spectral",
+      "sheet": "creatures/sheets/45_banshee_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 46,
+      "slug": "kelpie",
+      "name": "Kelpie",
+      "mythology": "Celta",
+      "archetype": "quadruped",
+      "sheet": "creatures/sheets/46_kelpie_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 47,
+      "slug": "leshy",
+      "name": "Leshy",
+      "mythology": "Eslava",
+      "archetype": "humanoid",
+      "sheet": "creatures/sheets/47_leshy_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 48,
+      "slug": "zmei_gorynych",
+      "name": "Zmei Gorynych",
+      "mythology": "Eslava",
+      "archetype": "hydra",
+      "sheet": "creatures/sheets/48_zmei_gorynych_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 49,
+      "slug": "wendigo",
+      "name": "Wendigo",
+      "mythology": "Ameríndia",
+      "archetype": "humanoid",
+      "sheet": "creatures/sheets/49_wendigo_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 50,
+      "slug": "chupacabra",
+      "name": "Chupacabra",
+      "mythology": "Americana",
+      "archetype": "quadruped",
+      "sheet": "creatures/sheets/50_chupacabra_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 51,
+      "slug": "quetzalcoatl",
+      "name": "Quetzalcóatl",
+      "mythology": "Asteca",
+      "archetype": "serpent",
+      "sheet": "creatures/sheets/51_quetzalcoatl_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 52,
+      "slug": "golem_barro",
+      "name": "Golem de Barro",
+      "mythology": "Judaica",
+      "archetype": "brute",
+      "sheet": "creatures/sheets/52_golem_barro_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 53,
+      "slug": "ifrit",
+      "name": "Ifrit",
+      "mythology": "Árabe",
+      "archetype": "spectral",
+      "sheet": "creatures/sheets/53_ifrit_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 54,
+      "slug": "roc",
+      "name": "Pássaro Roca",
+      "mythology": "Árabe",
+      "archetype": "avian",
+      "sheet": "creatures/sheets/54_roc_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 55,
+      "slug": "naga",
+      "name": "Naga",
+      "mythology": "Hindu",
+      "archetype": "naga",
+      "sheet": "creatures/sheets/55_naga_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 56,
+      "slug": "rakshasa",
+      "name": "Rakshasa",
+      "mythology": "Hindu",
+      "archetype": "humanoid",
+      "sheet": "creatures/sheets/56_rakshasa_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 57,
+      "slug": "garuda",
+      "name": "Garuda",
+      "mythology": "Hindu",
+      "archetype": "avian",
+      "sheet": "creatures/sheets/57_garuda_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 58,
+      "slug": "qilin",
+      "name": "Qilin",
+      "mythology": "Chinesa",
+      "archetype": "quadruped",
+      "sheet": "creatures/sheets/58_qilin_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 59,
+      "slug": "jiangshi",
+      "name": "Jiangshi",
+      "mythology": "Chinesa",
+      "archetype": "humanoid",
+      "sheet": "creatures/sheets/59_jiangshi_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    },
+    {
+      "id": 60,
+      "slug": "leviata",
+      "name": "Leviatã",
+      "mythology": "Mesopotâmica",
+      "archetype": "dragon",
+      "sheet": "creatures/sheets/60_leviata_4dir.png",
+      "frameSize": [
+        32,
+        32
+      ],
+      "scale": 1,
+      "animations": {},
+      "locomotion": "unverified"
+    }
+  ],
+  "biomes": [
+    {
+      "id": 1,
+      "slug": "floresta_amazonica",
+      "name": "Floresta Amazônica e Mata Encantada",
+      "folder": "01_floresta_amazonica",
+      "palette": {
+        "ground": "#2D6A4F",
+        "path": "#7F5539",
+        "liquid": "#1B6B72",
+        "cliff": "#4A3525",
+        "accent": "#9EF01A"
+      },
+      "creatureIds": [
+        16,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        47
+      ],
+      "tileSize": 32,
+      "landmarkSize": 64,
+      "tiles": {
+        "ground": [
+          "biomes/01_floresta_amazonica/tiles_32x32/ground_01.png",
+          "biomes/01_floresta_amazonica/tiles_32x32/ground_02.png",
+          "biomes/01_floresta_amazonica/tiles_32x32/ground_03.png",
+          "biomes/01_floresta_amazonica/tiles_32x32/ground_04.png"
+        ],
+        "path": [
+          "biomes/01_floresta_amazonica/tiles_32x32/path_cobble.png"
+        ],
+        "cliff": [
+          "biomes/01_floresta_amazonica/tiles_32x32/cliff_wall.png"
+        ]
+      },
+      "transitions": [
+        "biomes/01_floresta_amazonica/transitions_32x32/edge_E.png",
+        "biomes/01_floresta_amazonica/transitions_32x32/edge_N.png",
+        "biomes/01_floresta_amazonica/transitions_32x32/edge_NE.png",
+        "biomes/01_floresta_amazonica/transitions_32x32/edge_NW.png",
+        "biomes/01_floresta_amazonica/transitions_32x32/edge_S.png",
+        "biomes/01_floresta_amazonica/transitions_32x32/edge_SE.png",
+        "biomes/01_floresta_amazonica/transitions_32x32/edge_SW.png",
+        "biomes/01_floresta_amazonica/transitions_32x32/edge_W.png"
+      ],
+      "props": [
+        "biomes/01_floresta_amazonica/props/landmark_flora_64x64.png",
+        "biomes/01_floresta_amazonica/props/landmark_structure_64x64.png",
+        "biomes/01_floresta_amazonica/props/prop_cluster_32x32.png",
+        "biomes/01_floresta_amazonica/props/prop_relic_32x32.png"
+      ],
+      "animated": [
+        "biomes/01_floresta_amazonica/animated/brazier_3frames_96x32.png",
+        "biomes/01_floresta_amazonica/animated/liquid_3frames_96x32.png"
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "olimpo_ruinas_gregas",
+      "name": "Monte Olimpo e Ruínas Helênicas",
+      "folder": "02_olimpo_ruinas_gregas",
+      "palette": {
+        "ground": "#A3B18A",
+        "path": "#E5E5E5",
+        "liquid": "#0096C7",
+        "cliff": "#8D99AE",
+        "accent": "#F4D35E"
+      },
+      "creatureIds": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        15
+      ],
+      "tileSize": 32,
+      "landmarkSize": 64,
+      "tiles": {
+        "ground": [
+          "biomes/02_olimpo_ruinas_gregas/tiles_32x32/ground_01.png",
+          "biomes/02_olimpo_ruinas_gregas/tiles_32x32/ground_02.png",
+          "biomes/02_olimpo_ruinas_gregas/tiles_32x32/ground_03.png",
+          "biomes/02_olimpo_ruinas_gregas/tiles_32x32/ground_04.png"
+        ],
+        "path": [
+          "biomes/02_olimpo_ruinas_gregas/tiles_32x32/path_cobble.png"
+        ],
+        "cliff": [
+          "biomes/02_olimpo_ruinas_gregas/tiles_32x32/cliff_wall.png"
+        ]
+      },
+      "transitions": [
+        "biomes/02_olimpo_ruinas_gregas/transitions_32x32/edge_E.png",
+        "biomes/02_olimpo_ruinas_gregas/transitions_32x32/edge_N.png",
+        "biomes/02_olimpo_ruinas_gregas/transitions_32x32/edge_NE.png",
+        "biomes/02_olimpo_ruinas_gregas/transitions_32x32/edge_NW.png",
+        "biomes/02_olimpo_ruinas_gregas/transitions_32x32/edge_S.png",
+        "biomes/02_olimpo_ruinas_gregas/transitions_32x32/edge_SE.png",
+        "biomes/02_olimpo_ruinas_gregas/transitions_32x32/edge_SW.png",
+        "biomes/02_olimpo_ruinas_gregas/transitions_32x32/edge_W.png"
+      ],
+      "props": [
+        "biomes/02_olimpo_ruinas_gregas/props/landmark_flora_64x64.png",
+        "biomes/02_olimpo_ruinas_gregas/props/landmark_structure_64x64.png",
+        "biomes/02_olimpo_ruinas_gregas/props/prop_cluster_32x32.png",
+        "biomes/02_olimpo_ruinas_gregas/props/prop_relic_32x32.png"
+      ],
+      "animated": [
+        "biomes/02_olimpo_ruinas_gregas/animated/brazier_3frames_96x32.png",
+        "biomes/02_olimpo_ruinas_gregas/animated/liquid_3frames_96x32.png"
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "deserto_egipcio",
+      "name": "Deserto Faraônico e Oásis",
+      "folder": "03_deserto_egipcio",
+      "palette": {
+        "ground": "#E0A96D",
+        "path": "#C98A4B",
+        "liquid": "#00B4D8",
+        "cliff": "#9C6644",
+        "accent": "#FFD166"
+      },
+      "creatureIds": [
+        12,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "tileSize": 32,
+      "landmarkSize": 64,
+      "tiles": {
+        "ground": [
+          "biomes/03_deserto_egipcio/tiles_32x32/ground_01.png",
+          "biomes/03_deserto_egipcio/tiles_32x32/ground_02.png",
+          "biomes/03_deserto_egipcio/tiles_32x32/ground_03.png",
+          "biomes/03_deserto_egipcio/tiles_32x32/ground_04.png"
+        ],
+        "path": [
+          "biomes/03_deserto_egipcio/tiles_32x32/path_cobble.png"
+        ],
+        "cliff": [
+          "biomes/03_deserto_egipcio/tiles_32x32/cliff_wall.png"
+        ]
+      },
+      "transitions": [
+        "biomes/03_deserto_egipcio/transitions_32x32/edge_E.png",
+        "biomes/03_deserto_egipcio/transitions_32x32/edge_N.png",
+        "biomes/03_deserto_egipcio/transitions_32x32/edge_NE.png",
+        "biomes/03_deserto_egipcio/transitions_32x32/edge_NW.png",
+        "biomes/03_deserto_egipcio/transitions_32x32/edge_S.png",
+        "biomes/03_deserto_egipcio/transitions_32x32/edge_SE.png",
+        "biomes/03_deserto_egipcio/transitions_32x32/edge_SW.png",
+        "biomes/03_deserto_egipcio/transitions_32x32/edge_W.png"
+      ],
+      "props": [
+        "biomes/03_deserto_egipcio/props/landmark_flora_64x64.png",
+        "biomes/03_deserto_egipcio/props/landmark_structure_64x64.png",
+        "biomes/03_deserto_egipcio/props/prop_cluster_32x32.png",
+        "biomes/03_deserto_egipcio/props/prop_relic_32x32.png"
+      ],
+      "animated": [
+        "biomes/03_deserto_egipcio/animated/brazier_3frames_96x32.png",
+        "biomes/03_deserto_egipcio/animated/liquid_3frames_96x32.png"
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "fiordes_gelo_nordico",
+      "name": "Fiordes Congelados e Terras Nórdicas",
+      "folder": "04_fiordes_gelo_nordico",
+      "palette": {
+        "ground": "#DCEEF3",
+        "path": "#6C757D",
+        "liquid": "#277DA1",
+        "cliff": "#495057",
+        "accent": "#4CC9F0"
+      },
+      "creatureIds": [
+        19,
+        21,
+        22,
+        23,
+        24,
+        49
+      ],
+      "tileSize": 32,
+      "landmarkSize": 64,
+      "tiles": {
+        "ground": [
+          "biomes/04_fiordes_gelo_nordico/tiles_32x32/ground_01.png",
+          "biomes/04_fiordes_gelo_nordico/tiles_32x32/ground_02.png",
+          "biomes/04_fiordes_gelo_nordico/tiles_32x32/ground_03.png",
+          "biomes/04_fiordes_gelo_nordico/tiles_32x32/ground_04.png"
+        ],
+        "path": [
+          "biomes/04_fiordes_gelo_nordico/tiles_32x32/path_cobble.png"
+        ],
+        "cliff": [
+          "biomes/04_fiordes_gelo_nordico/tiles_32x32/cliff_wall.png"
+        ]
+      },
+      "transitions": [
+        "biomes/04_fiordes_gelo_nordico/transitions_32x32/edge_E.png",
+        "biomes/04_fiordes_gelo_nordico/transitions_32x32/edge_N.png",
+        "biomes/04_fiordes_gelo_nordico/transitions_32x32/edge_NE.png",
+        "biomes/04_fiordes_gelo_nordico/transitions_32x32/edge_NW.png",
+        "biomes/04_fiordes_gelo_nordico/transitions_32x32/edge_S.png",
+        "biomes/04_fiordes_gelo_nordico/transitions_32x32/edge_SE.png",
+        "biomes/04_fiordes_gelo_nordico/transitions_32x32/edge_SW.png",
+        "biomes/04_fiordes_gelo_nordico/transitions_32x32/edge_W.png"
+      ],
+      "props": [
+        "biomes/04_fiordes_gelo_nordico/props/landmark_flora_64x64.png",
+        "biomes/04_fiordes_gelo_nordico/props/landmark_structure_64x64.png",
+        "biomes/04_fiordes_gelo_nordico/props/prop_cluster_32x32.png",
+        "biomes/04_fiordes_gelo_nordico/props/prop_relic_32x32.png"
+      ],
+      "animated": [
+        "biomes/04_fiordes_gelo_nordico/animated/brazier_3frames_96x32.png",
+        "biomes/04_fiordes_gelo_nordico/animated/liquid_3frames_96x32.png"
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "pantano_sombrio",
+      "name": "Pântano Maldito e Brejo de Lerna",
+      "folder": "05_pantano_sombrio",
+      "palette": {
+        "ground": "#414833",
+        "path": "#582F0E",
+        "liquid": "#606C38",
+        "cliff": "#333D29",
+        "accent": "#B5E48C"
+      },
+      "creatureIds": [
+        3,
+        14,
+        42,
+        45,
+        46,
+        50
+      ],
+      "tileSize": 32,
+      "landmarkSize": 64,
+      "tiles": {
+        "ground": [
+          "biomes/05_pantano_sombrio/tiles_32x32/ground_01.png",
+          "biomes/05_pantano_sombrio/tiles_32x32/ground_02.png",
+          "biomes/05_pantano_sombrio/tiles_32x32/ground_03.png",
+          "biomes/05_pantano_sombrio/tiles_32x32/ground_04.png"
+        ],
+        "path": [
+          "biomes/05_pantano_sombrio/tiles_32x32/path_cobble.png"
+        ],
+        "cliff": [
+          "biomes/05_pantano_sombrio/tiles_32x32/cliff_wall.png"
+        ]
+      },
+      "transitions": [
+        "biomes/05_pantano_sombrio/transitions_32x32/edge_E.png",
+        "biomes/05_pantano_sombrio/transitions_32x32/edge_N.png",
+        "biomes/05_pantano_sombrio/transitions_32x32/edge_NE.png",
+        "biomes/05_pantano_sombrio/transitions_32x32/edge_NW.png",
+        "biomes/05_pantano_sombrio/transitions_32x32/edge_S.png",
+        "biomes/05_pantano_sombrio/transitions_32x32/edge_SE.png",
+        "biomes/05_pantano_sombrio/transitions_32x32/edge_SW.png",
+        "biomes/05_pantano_sombrio/transitions_32x32/edge_W.png"
+      ],
+      "props": [
+        "biomes/05_pantano_sombrio/props/landmark_flora_64x64.png",
+        "biomes/05_pantano_sombrio/props/landmark_structure_64x64.png",
+        "biomes/05_pantano_sombrio/props/prop_cluster_32x32.png",
+        "biomes/05_pantano_sombrio/props/prop_relic_32x32.png"
+      ],
+      "animated": [
+        "biomes/05_pantano_sombrio/animated/brazier_3frames_96x32.png",
+        "biomes/05_pantano_sombrio/animated/liquid_3frames_96x32.png"
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "santuario_oriental",
+      "name": "Santuário Yokai e Jardim Imperial",
+      "folder": "06_santuario_oriental",
+      "palette": {
+        "ground": "#52B788",
+        "path": "#ADB5BD",
+        "liquid": "#2EC4B6",
+        "cliff": "#4A5759",
+        "accent": "#E63946"
+      },
+      "creatureIds": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        58,
+        59
+      ],
+      "tileSize": 32,
+      "landmarkSize": 64,
+      "tiles": {
+        "ground": [
+          "biomes/06_santuario_oriental/tiles_32x32/ground_01.png",
+          "biomes/06_santuario_oriental/tiles_32x32/ground_02.png",
+          "biomes/06_santuario_oriental/tiles_32x32/ground_03.png",
+          "biomes/06_santuario_oriental/tiles_32x32/ground_04.png"
+        ],
+        "path": [
+          "biomes/06_santuario_oriental/tiles_32x32/path_cobble.png"
+        ],
+        "cliff": [
+          "biomes/06_santuario_oriental/tiles_32x32/cliff_wall.png"
+        ]
+      },
+      "transitions": [
+        "biomes/06_santuario_oriental/transitions_32x32/edge_E.png",
+        "biomes/06_santuario_oriental/transitions_32x32/edge_N.png",
+        "biomes/06_santuario_oriental/transitions_32x32/edge_NE.png",
+        "biomes/06_santuario_oriental/transitions_32x32/edge_NW.png",
+        "biomes/06_santuario_oriental/transitions_32x32/edge_S.png",
+        "biomes/06_santuario_oriental/transitions_32x32/edge_SE.png",
+        "biomes/06_santuario_oriental/transitions_32x32/edge_SW.png",
+        "biomes/06_santuario_oriental/transitions_32x32/edge_W.png"
+      ],
+      "props": [
+        "biomes/06_santuario_oriental/props/landmark_flora_64x64.png",
+        "biomes/06_santuario_oriental/props/landmark_structure_64x64.png",
+        "biomes/06_santuario_oriental/props/prop_cluster_32x32.png",
+        "biomes/06_santuario_oriental/props/prop_relic_32x32.png"
+      ],
+      "animated": [
+        "biomes/06_santuario_oriental/animated/brazier_3frames_96x32.png",
+        "biomes/06_santuario_oriental/animated/liquid_3frames_96x32.png"
+      ]
+    },
+    {
+      "id": 7,
+      "slug": "submundo_vulcanico",
+      "name": "Abismo Vulcânico e Forja Infernal",
+      "folder": "07_submundo_vulcanico",
+      "palette": {
+        "ground": "#2B2D42",
+        "path": "#4A4E69",
+        "liquid": "#E85D04",
+        "cliff": "#1D1E2C",
+        "accent": "#FFBA08"
+      },
+      "creatureIds": [
+        4,
+        10,
+        13,
+        17,
+        43,
+        53
+      ],
+      "tileSize": 32,
+      "landmarkSize": 64,
+      "tiles": {
+        "ground": [
+          "biomes/07_submundo_vulcanico/tiles_32x32/ground_01.png",
+          "biomes/07_submundo_vulcanico/tiles_32x32/ground_02.png",
+          "biomes/07_submundo_vulcanico/tiles_32x32/ground_03.png",
+          "biomes/07_submundo_vulcanico/tiles_32x32/ground_04.png"
+        ],
+        "path": [
+          "biomes/07_submundo_vulcanico/tiles_32x32/path_cobble.png"
+        ],
+        "cliff": [
+          "biomes/07_submundo_vulcanico/tiles_32x32/cliff_wall.png"
+        ]
+      },
+      "transitions": [
+        "biomes/07_submundo_vulcanico/transitions_32x32/edge_E.png",
+        "biomes/07_submundo_vulcanico/transitions_32x32/edge_N.png",
+        "biomes/07_submundo_vulcanico/transitions_32x32/edge_NE.png",
+        "biomes/07_submundo_vulcanico/transitions_32x32/edge_NW.png",
+        "biomes/07_submundo_vulcanico/transitions_32x32/edge_S.png",
+        "biomes/07_submundo_vulcanico/transitions_32x32/edge_SE.png",
+        "biomes/07_submundo_vulcanico/transitions_32x32/edge_SW.png",
+        "biomes/07_submundo_vulcanico/transitions_32x32/edge_W.png"
+      ],
+      "props": [
+        "biomes/07_submundo_vulcanico/props/landmark_flora_64x64.png",
+        "biomes/07_submundo_vulcanico/props/landmark_structure_64x64.png",
+        "biomes/07_submundo_vulcanico/props/prop_cluster_32x32.png",
+        "biomes/07_submundo_vulcanico/props/prop_relic_32x32.png"
+      ],
+      "animated": [
+        "biomes/07_submundo_vulcanico/animated/brazier_3frames_96x32.png",
+        "biomes/07_submundo_vulcanico/animated/liquid_3frames_96x32.png"
+      ]
+    },
+    {
+      "id": 8,
+      "slug": "oceano_abissal",
+      "name": "Abismo Oceânico e Ruínas Atlantes",
+      "folder": "08_oceano_abissal",
+      "palette": {
+        "ground": "#1D4E89",
+        "path": "#48CAE4",
+        "liquid": "#03045E",
+        "cliff": "#14213D",
+        "accent": "#FF758F"
+      },
+      "creatureIds": [
+        11,
+        18,
+        20,
+        60
+      ],
+      "tileSize": 32,
+      "landmarkSize": 64,
+      "tiles": {
+        "ground": [
+          "biomes/08_oceano_abissal/tiles_32x32/ground_01.png",
+          "biomes/08_oceano_abissal/tiles_32x32/ground_02.png",
+          "biomes/08_oceano_abissal/tiles_32x32/ground_03.png",
+          "biomes/08_oceano_abissal/tiles_32x32/ground_04.png"
+        ],
+        "path": [
+          "biomes/08_oceano_abissal/tiles_32x32/path_cobble.png"
+        ],
+        "cliff": [
+          "biomes/08_oceano_abissal/tiles_32x32/cliff_wall.png"
+        ]
+      },
+      "transitions": [
+        "biomes/08_oceano_abissal/transitions_32x32/edge_E.png",
+        "biomes/08_oceano_abissal/transitions_32x32/edge_N.png",
+        "biomes/08_oceano_abissal/transitions_32x32/edge_NE.png",
+        "biomes/08_oceano_abissal/transitions_32x32/edge_NW.png",
+        "biomes/08_oceano_abissal/transitions_32x32/edge_S.png",
+        "biomes/08_oceano_abissal/transitions_32x32/edge_SE.png",
+        "biomes/08_oceano_abissal/transitions_32x32/edge_SW.png",
+        "biomes/08_oceano_abissal/transitions_32x32/edge_W.png"
+      ],
+      "props": [
+        "biomes/08_oceano_abissal/props/landmark_flora_64x64.png",
+        "biomes/08_oceano_abissal/props/landmark_structure_64x64.png",
+        "biomes/08_oceano_abissal/props/prop_cluster_32x32.png",
+        "biomes/08_oceano_abissal/props/prop_relic_32x32.png"
+      ],
+      "animated": [
+        "biomes/08_oceano_abissal/animated/brazier_3frames_96x32.png",
+        "biomes/08_oceano_abissal/animated/liquid_3frames_96x32.png"
+      ]
+    },
+    {
+      "id": 9,
+      "slug": "templo_asteca_hindu",
+      "name": "Templos Solares e Selva Sagrada",
+      "folder": "09_templo_asteca_hindu",
+      "palette": {
+        "ground": "#40916C",
+        "path": "#8D7B68",
+        "liquid": "#00A896",
+        "cliff": "#5C5346",
+        "accent": "#F4D35E"
+      },
+      "creatureIds": [
+        51,
+        52,
+        55,
+        56,
+        57
+      ],
+      "tileSize": 32,
+      "landmarkSize": 64,
+      "tiles": {
+        "ground": [
+          "biomes/09_templo_asteca_hindu/tiles_32x32/ground_01.png",
+          "biomes/09_templo_asteca_hindu/tiles_32x32/ground_02.png",
+          "biomes/09_templo_asteca_hindu/tiles_32x32/ground_03.png",
+          "biomes/09_templo_asteca_hindu/tiles_32x32/ground_04.png"
+        ],
+        "path": [
+          "biomes/09_templo_asteca_hindu/tiles_32x32/path_cobble.png"
+        ],
+        "cliff": [
+          "biomes/09_templo_asteca_hindu/tiles_32x32/cliff_wall.png"
+        ]
+      },
+      "transitions": [
+        "biomes/09_templo_asteca_hindu/transitions_32x32/edge_E.png",
+        "biomes/09_templo_asteca_hindu/transitions_32x32/edge_N.png",
+        "biomes/09_templo_asteca_hindu/transitions_32x32/edge_NE.png",
+        "biomes/09_templo_asteca_hindu/transitions_32x32/edge_NW.png",
+        "biomes/09_templo_asteca_hindu/transitions_32x32/edge_S.png",
+        "biomes/09_templo_asteca_hindu/transitions_32x32/edge_SE.png",
+        "biomes/09_templo_asteca_hindu/transitions_32x32/edge_SW.png",
+        "biomes/09_templo_asteca_hindu/transitions_32x32/edge_W.png"
+      ],
+      "props": [
+        "biomes/09_templo_asteca_hindu/props/landmark_flora_64x64.png",
+        "biomes/09_templo_asteca_hindu/props/landmark_structure_64x64.png",
+        "biomes/09_templo_asteca_hindu/props/prop_cluster_32x32.png",
+        "biomes/09_templo_asteca_hindu/props/prop_relic_32x32.png"
+      ],
+      "animated": [
+        "biomes/09_templo_asteca_hindu/animated/brazier_3frames_96x32.png",
+        "biomes/09_templo_asteca_hindu/animated/liquid_3frames_96x32.png"
+      ]
+    },
+    {
+      "id": 10,
+      "slug": "picos_celestiais",
+      "name": "Picos Celestiais e Mar de Nuvens",
+      "folder": "10_picos_celestiais",
+      "palette": {
+        "ground": "#F8F9FA",
+        "path": "#F4D35E",
+        "liquid": "#90E0EF",
+        "cliff": "#B8C0FF",
+        "accent": "#FFD166"
+      },
+      "creatureIds": [
+        44,
+        48,
+        54
+      ],
+      "tileSize": 32,
+      "landmarkSize": 64,
+      "tiles": {
+        "ground": [
+          "biomes/10_picos_celestiais/tiles_32x32/ground_01.png",
+          "biomes/10_picos_celestiais/tiles_32x32/ground_02.png",
+          "biomes/10_picos_celestiais/tiles_32x32/ground_03.png",
+          "biomes/10_picos_celestiais/tiles_32x32/ground_04.png"
+        ],
+        "path": [
+          "biomes/10_picos_celestiais/tiles_32x32/path_cobble.png"
+        ],
+        "cliff": [
+          "biomes/10_picos_celestiais/tiles_32x32/cliff_wall.png"
+        ]
+      },
+      "transitions": [
+        "biomes/10_picos_celestiais/transitions_32x32/edge_E.png",
+        "biomes/10_picos_celestiais/transitions_32x32/edge_N.png",
+        "biomes/10_picos_celestiais/transitions_32x32/edge_NE.png",
+        "biomes/10_picos_celestiais/transitions_32x32/edge_NW.png",
+        "biomes/10_picos_celestiais/transitions_32x32/edge_S.png",
+        "biomes/10_picos_celestiais/transitions_32x32/edge_SE.png",
+        "biomes/10_picos_celestiais/transitions_32x32/edge_SW.png",
+        "biomes/10_picos_celestiais/transitions_32x32/edge_W.png"
+      ],
+      "props": [
+        "biomes/10_picos_celestiais/props/landmark_flora_64x64.png",
+        "biomes/10_picos_celestiais/props/landmark_structure_64x64.png",
+        "biomes/10_picos_celestiais/props/prop_cluster_32x32.png",
+        "biomes/10_picos_celestiais/props/prop_relic_32x32.png"
+      ],
+      "animated": [
+        "biomes/10_picos_celestiais/animated/brazier_3frames_96x32.png",
+        "biomes/10_picos_celestiais/animated/liquid_3frames_96x32.png"
+      ]
+    }
+  ],
+  "coverage": {
+    "creatureCount": 60,
+    "biomeCount": 10,
+    "uncovered": [],
+    "inMultipleBiomes": []
+  },
+  "issues": []
+}
